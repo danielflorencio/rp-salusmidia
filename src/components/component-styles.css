@@ -13,6 +13,18 @@ header > nav > a{
 header > nav > a:hover{
 
 }
+.background-color-dark-blue{
+    background-color: #171741;
+}
+.color-dark-blue{
+    color: #171741;
+}
+.color-white{
+    color: white;
+}
+.background-color-white{
+    background-color: white;
+}
 
 .section-1{ /* New section-1 */
     display: flex;
