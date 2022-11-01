@@ -4,7 +4,8 @@ import HeroSection from './components/HeroSection';
 import ImgTitleDescriptionSection from './components/ImgTitleDescriptionSection'
 import Title from './components/Title';
 import SubTitle from './components/Subtitle';
-
+import IconsAndDescriptionSection from './components/IconsAndDescriptionSection';
+// import IconAndDescriptionBlock from './components/IconAndDescriptionBlock';
 function App() {
   return (
     <>
@@ -30,12 +31,14 @@ function App() {
       <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="right-text-left-img" />
       <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="left-text-right-img" />
       <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="right-text-left-img" /> 
-      {/*
-      <Title title=''/>
-      <IconsAndImgSection>
-        <IconBlock icon="" title="title" description="description" cta="cta"/>
-      </IconsAndImgSection>
-      <Title title=''/>
+      
+      {/*// <Title title=''/>*/}
+        {/* <IconBlock icon="" title="title" description="description" cta="cta"/> */}
+      <IconsAndDescriptionSection/>
+
+      {/* <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="left-text-right-img" /> */}
+
+      {/*<Title title=''/>
       <ImgTitleDescriptionSection img="" title="title" description="description" style="left-text-right-img" />
       <ImgTitleDescriptionSection img="" title="title" description="description" style="right-text-left-img" />
       <ImgTitleDescriptionSection img="" title="title" description="description" style="left-text-right-img" />
