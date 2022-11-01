@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import HeroSection from './components/HeroSection';
+import ImgTitleDescriptionSection from './components/ImgTitleDescriptionSection'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <HeroSection />
+      {/* <Title/> */}
+      <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="left-text-right-img" />
+      <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="right-text-left-img" />
+      <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="left-text-right-img" />
+      <ImgTitleDescriptionSection img="" subtitle="title" description="description" style="right-text-left-img" /> 
+      {/*
+      <Title title=''/>
+      <IconsAndImgSection>
+        <IconBlock icon="" title="title" description="description" cta="cta"/>
+      </IconsAndImgSection>
+      <Title title=''/>
+      <ImgTitleDescriptionSection img="" title="title" description="description" style="left-text-right-img" />
+      <ImgTitleDescriptionSection img="" title="title" description="description" style="right-text-left-img" />
+      <ImgTitleDescriptionSection img="" title="title" description="description" style="left-text-right-img" />
+      <Title title=''/>
+      <FaqSection>
+        <FaqItem question="" answer=""/>
+        <FaqItem question="" answer=""/>
+        <FaqItem question="" answer=""/>
+        <FaqItem question="" answer=""/>
+        <FaqItem question="" answer=""/>
+      </FaqSection>
+      <Footer/> */}
+    </>
+    );
 }
 
 export default App;
