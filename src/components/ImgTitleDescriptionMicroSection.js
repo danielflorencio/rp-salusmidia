@@ -3,7 +3,7 @@ import './component-styles.css';
 
 
 
-export default function ImgTitleDescriptionSection({img, subtitle, description, style}){
+export default function ImgTitleDescriptionMicroSection({img, subtitle, description, style}){
     if (style === 'left-text-right-img'){
         return(
             <>

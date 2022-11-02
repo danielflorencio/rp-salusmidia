@@ -1,7 +1,7 @@
 header{margin-top: 0%;}
-header > nav {
-    margin-top: 0;
-}
+
+header > nav {  margin-top: 0;}
+
 header > nav > a{
     float: right;
     margin-top: 5px;
@@ -13,24 +13,15 @@ header > nav > a{
 header > nav > a:hover{
 
 }
-.background-color-dark-blue{
-    background-color: #171741;
-}
-.background-color-white{
-    background-color: white;
-}
-.background-color-light-blue{
-    background-color: #6384ff;
-}
-.color-dark-blue{
-    color: #171741;
-}
-.color-white{
-    color: white;
-}
-.color-light-blue{
-    color: #6384ff;
-}
+
+.background-color-dark-blue{background-color: #171741;}
+.background-color-white{background-color: white;}
+.background-color-light-blue{background-color: #6384ff;}
+
+.color-dark-blue{color: #171741;}
+.color-white{color: white;}
+.color-light-blue{color: #6384ff;}
+
 .section{
     width: 100%;
     max-height: 1000px;
@@ -38,6 +29,14 @@ header > nav > a:hover{
     align-items: center;
     justify-content: center;
 }
+
+
+h2, h3{
+    margin: 0%;
+}
+
+
+
 .section-1{ /* New section-1 */
     display: flex;
     background-color: white;
@@ -47,7 +46,6 @@ header > nav > a:hover{
     padding-bottom: 40px;
 }
 .main-column-left{
-    /* border: 1px solid; */
     max-height: 800px;
     min-height: 300px;
     width: 50%;
@@ -57,7 +55,6 @@ header > nav > a:hover{
     padding-left: 45px;
     padding-right: 45px;
 }
-
 .main-column-left > h1, .main-column-left > h2{
     padding-top: 15px;
 }
@@ -65,12 +62,7 @@ header > nav > a:hover{
     width: 300px;
     height: 150px;
 }
-
-/* .main-column-left > h1, .main-column-left > h2, .main-column-left > input{
-    margin: auto;
-} */
 .main-column-right{
-    /* border: 1px solid; */
     max-height: 800px;
     min-height: 300px;
     width: 50%;
@@ -139,6 +131,7 @@ header > nav > a:hover{
 .inner-column{
     height: 280px;
     width: 500px; 
+    padding-right: 25px;
 }
 .left{
     /* background-color: yellow; */
@@ -146,7 +139,6 @@ header > nav > a:hover{
     border: 2px solid;
 }
 .right{
-    /* background-color: orange; */
     margin-right: 40px;
     border: 2px solid;
 }
@@ -161,8 +153,6 @@ header > nav > a:hover{
 .block{
     height: 280px;
     width: 300px;
-    /* margin: 50px 50px; Gap-testing */
-    /* background-color: blue; */
     background-color: white;
     border-radius: 10px;
     padding: 0 25px;
@@ -250,8 +240,5 @@ header > nav > a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.footer > h4{
-
     color: white;
 }
