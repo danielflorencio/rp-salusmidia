@@ -6,6 +6,7 @@ import Title from './components/Title';
 import SubTitle from './components/Subtitle';
 import IconsAndDescriptionSection from './components/IconsAndDescriptionSection';
 import RedCTAButton from './components/RedCTAButton';
+import FaqSection from './components/FaqSection';
 function App() {
   return (
     <>
@@ -42,26 +43,18 @@ function App() {
       <ImgTitleDescriptionSection img="" subtitle="Step 2 - Execution and revenue." description="If the contract is closed, here is where we will make your company start receiving more patients. We will collect the necessary data to create your persuasive website, create your ad campaigns, and increase your number of consultations and procedures." style="right-text-left-img" />
       <ImgTitleDescriptionSection img="" subtitle="Step 3 - Analysis and scale." description="Here is where happiness lives, our favorite step. After collecting the data and improving the first campaigns, we will be able to know exactly what to do to further multiply your profit and the arrival of new patients." style="left-text-right-img" />
 
+      {/* 
+      RedCTAButton has three color options as for background.
+      white, dark-blue and light-blue.
+      */}
+      <Title title='testing it' color='white' background_color={'light-blue'}/> 
+      <RedCTAButton cta='Schedule meeting' background_color={'light-blue'}/>
       
-      {/* <Title title='' background_color={}/> */}
-      <RedCTAButton cta='Schedule meeting'/>
       
       
-      
-      {/*
-      
-      <ImgTitleDescriptionSection img="" title="title" description="description" style="left-text-right-img" />
-      <ImgTitleDescriptionSection img="" title="title" description="description" style="right-text-left-img" />
-      <ImgTitleDescriptionSection img="" title="title" description="description" style="left-text-right-img" />
-      <Title title=''/>
-      <FaqSection>
-        <FaqItem question="" answer=""/>
-        <FaqItem question="" answer=""/>
-        <FaqItem question="" answer=""/>
-        <FaqItem question="" answer=""/>
-        <FaqItem question="" answer=""/>
-      </FaqSection>
-      <Footer/> */}
+      <FaqSection/>
+        
+      {/* <Footer/> */}
     </>
     );
 }
