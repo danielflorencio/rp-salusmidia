@@ -13,7 +13,7 @@ function Answer({Answer, isVisible}){
 }
 export default function FaqItem({question, answer}){
     const [visibility, setVisibility] = useState(true)
-    function changeVisibility(visibility){
+    function changeVisibility(){
         if (visibility === true){
             setVisibility(false)
         } else{
@@ -23,7 +23,7 @@ export default function FaqItem({question, answer}){
     return(
         <div className="accordion-item">
 
-            <div className="question"><a class="accordion-link" onClick={changeVisibility(visibility)}>{question}</a></div>
+            <div className="question"><a class="accordion-link" onClick={changeVisibility}>{question}</a></div>
             <Answer Answer={answer} isVisible={visibility}/>
             {/* {visibility ? <div className='answer'></div> : <div></div> } */}
             {/* // <div className="answer">{answer}</div> */}
