@@ -1,7 +1,5 @@
 import './component-styles.css'
 import { useState } from 'react'
-import { isVisible } from '@testing-library/user-event/dist/utils'
-
 function Answer({Answer, isVisible}){
     if(isVisible){
         return(
@@ -13,28 +11,13 @@ function Answer({Answer, isVisible}){
 }
 export default function FaqItem({question, answer}){
     const [visibility, setVisibility] = useState(true)
-    function changeVisibility(){
-        if (visibility === true){
-            setVisibility(false)
-        } else{
-            setVisibility(true)
-        }
-    }
+
+    function changeVisibility(){visibility ? (setVisibility(false)) : (setVisibility(true))}
+    
     return(
         <div className="accordion-item">
-
-            <div className="question"><a class="accordion-link" onClick={changeVisibility}>{question}</a></div>
+            <div className="question"><a class="accordion-link" onClick={changeVisibility}><strong>{question}</strong></a></div>
             <Answer Answer={answer} isVisible={visibility}/>
-            {/* {visibility ? <div className='answer'></div> : <div></div> } */}
-            {/* // <div className="answer">{answer}</div> */}
         </div>
     )
 }
-
-{/* <div class="accordion-item" id="question-1">
-<div>
-<a class="accordion-link" href="#question-1">
-    Question 1
-    <ion-icon name="add-outline" class="add-icon"></ion-icon>
-    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
-</a> */}

@@ -206,10 +206,12 @@ h2, h3{
     justify-content: space-between;
     width: 600px;
     border: 1px solid;
+    padding-left: 5px;
 }
 
 .accordion-item {
     border: 1px solid;
+    padding-left: 5px;
     margin-bottom: 1rem;
     padding: 1rem;
     box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
@@ -226,6 +228,7 @@ h2, h3{
     border: 1px solid;
 }
 .answer{
+    padding-left: 5px;
     /* padding-top: 0.7rem;
     overflow: hidden; /* Learn more about this property */
     position: relative; /* Learn more about this property */
