@@ -2,6 +2,17 @@ import './component-styles.css'
 import IconAndDescriptionBlock from "./IconAndDescriptionBlock";
 import SubTitle from './Subtitle';
 import Title from './Title';
+import { IconContext } from "react-icons";
+// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
+import { AiFillStar } from 'react-icons/ai';
+import {FaTicketAlt} from 'react-icons/fa';
+import {AiOutlineCreditCard} from 'react-icons/ai';
+import {AiOutlineCalendar} from 'react-icons/ai';
+import {BiHappyBeaming} from 'react-icons/bi';
+import {MdOutlineHealthAndSafety} from 'react-icons/md';
+import {BsFillBarChartLineFill} from 'react-icons/bs'
+import {BiMoney} from 'react-icons/bi';
+
 
 export default function IconsAndDescriptionSection(){
     return(
@@ -19,42 +30,44 @@ export default function IconsAndDescriptionSection(){
             <div className="section-type-blue" id='benefit-section'>
                 <IconAndDescriptionBlock 
                 title='Higher average ticket' 
-                src='kasdas' 
-                description='With more patients incoming, raising your prices and also your revenue is just a matter of time.' />
+                icon={<FaTicketAlt/>}
+                description='With more patients incoming, raising your prices and also your revenue is just a matter of time.'/>
                 
+                    
+            
                 <IconAndDescriptionBlock 
                 title='No more insurances' 
-                src='kasdas' 
+                icon={<AiOutlineCreditCard/>} 
                 description='By raising your prices, you’ll say godbye to the need of attending insurance patients in your healthcare clinic.' />
                 
                 <IconAndDescriptionBlock 
                 title='More free time' 
-                src='kasdas' 
+                icon={<AiOutlineCalendar/>} 
                 description='With less insurance consultations and procedures, the increase in revenue will allow you to have more time with your family.' />
 
                 <IconAndDescriptionBlock 
                 title='More quality of life' 
-                src='kasdas'
+                icon={<BiHappyBeaming/>}
                 description='Stop worrying about your company’s commercial area. Focus on the medicine, and the commercial part is up to us.' />
                 
                 <IconAndDescriptionBlock 
                 title='Medical recognition' 
-                src='kasdas' 
+                icon={<MdOutlineHealthAndSafety/>} 
                 description='By having more and more patients, you will be more and more recommended and become an even greater authority.' />
                 
                 <IconAndDescriptionBlock 
                 title='Your business growing' 
-                src='kasdas' 
+                icon={<BsFillBarChartLineFill/>} 
                 description='With more profit coming in, you will be able to hire more employees, and even other doctors to attend patients in your place.' />                
             
                 <IconAndDescriptionBlock 
                 title='Future economy' 
-                src='kasdas' 
+                icon={<BiMoney/>}
                 description='By signing a contract with us now, you guarantee exclusive discounts (and perhaps free access) to future Salus products.' />
                 
                 <IconAndDescriptionBlock 
                 title='6X cheaper' 
-                src='kasdas' 
+                icon={<AiFillStar/>}
                 description='Hiring our services is 6 times cheaper than assembling your own team. Close the contract before our prices increase.' />    
             </div>
         </>

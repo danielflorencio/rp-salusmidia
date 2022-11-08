@@ -233,6 +233,9 @@ h2, h3{
     overflow: hidden; /* Learn more about this property */
     position: relative; /* Learn more about this property */
     border: 1px solid;
+    animation-name: answer;
+    animation: answer 500ms ease-in-out;
+    padding: 10px 5px;
 }
 
 .accordion-link .remove-icon{
@@ -250,4 +253,13 @@ h2, h3{
 .faq{
     padding-top: 15px;
     padding-bottom: 60px;
+}
+
+@keyframes answer {
+    0% {
+      max-height: 0px;
+    }
+    100% {
+      max-height: 500px;
+    }
 }
