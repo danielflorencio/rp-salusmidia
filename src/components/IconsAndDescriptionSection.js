@@ -2,8 +2,6 @@ import './component-styles.css'
 import IconAndDescriptionBlock from "./IconAndDescriptionBlock";
 import SubTitle from './Subtitle';
 import Title from './Title';
-import { IconContext } from "react-icons";
-// import { FaBeer } from "@react-icons/all-files/fa/FaBeer";
 import { AiFillStar } from 'react-icons/ai';
 import {FaTicketAlt} from 'react-icons/fa';
 import {AiOutlineCreditCard} from 'react-icons/ai';
@@ -32,8 +30,6 @@ export default function IconsAndDescriptionSection(){
                 title='Higher average ticket' 
                 icon={<FaTicketAlt/>}
                 description='With more patients incoming, raising your prices and also your revenue is just a matter of time.'/>
-                
-                    
             
                 <IconAndDescriptionBlock 
                 title='No more insurances' 

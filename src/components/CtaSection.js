@@ -4,7 +4,7 @@ import CtaButton from './CtaButton'
 export default function CtaSection(){
     return(
         <>
-            <Title/>
+            <Title title='CTA' color='white' background_color='light-blue'/>
             <CtaButton cta='Schedule meeting' background_color={'light-blue'}/>
         </>
     )
