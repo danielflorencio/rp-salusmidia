@@ -1,6 +1,7 @@
 import React from "react";
 import './component-styles.css';
 
+
 export default function HeroSection(){
     return(
     <>

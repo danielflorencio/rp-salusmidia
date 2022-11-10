@@ -1,11 +1,11 @@
-import './component-styles.css';
+// import './component-styles.css';
 import Title from './Title';
-import CtaButton from './CtaButton'
+import Button from './Button/Button'
 export default function CtaSection(){
     return(
-        <>
+        <>  
             <Title title='CTA' color='white' background_color='light-blue'/>
-            <CtaButton cta='Schedule meeting' background_color={'light-blue'}/>
+            <Button cta='Schedule meeting' color='white' backgroundColor='red'/>
         </>
     )
 }
