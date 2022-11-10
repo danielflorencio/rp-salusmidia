@@ -16,7 +16,7 @@ export default function IconsAndDescriptionSection(){
     return(
         <>
             <Title 
-            title='A WELL DONE MARKETING CAN BRING YOU ALL THESE BENEFITS.' 
+            title='A well done marketing can bring you all these benefits.' 
             color='white' 
             background_color='light-blue'/>
 

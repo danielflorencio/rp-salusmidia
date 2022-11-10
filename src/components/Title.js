@@ -10,7 +10,7 @@ export default function Title({title, color, background_color}){
     console.log(classes)
     return(
         <>
-            <h2 className={classes + 'center'}>{title}</h2>
+            <h2 className={classes + 'section-title-h2 center'}>{title}</h2>
         </>
     )
 }

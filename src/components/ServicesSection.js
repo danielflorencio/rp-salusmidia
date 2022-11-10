@@ -12,7 +12,7 @@ export default function ServicesSection(){
     return(
         <>
             <Title 
-            title='THE 4 THINGS THAT WILL MULTIPLY THE NUMBER OF INCOMING PATIENTS IN YOUR BUSINESS…' 
+            title='The 4 things that will multiply the number of incoming patients in your business...'
             color='dark-blue' 
             background_color='white'/>
 

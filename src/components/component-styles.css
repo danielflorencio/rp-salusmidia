@@ -27,6 +27,14 @@ header > nav > a:hover{}
     flex-direction: column;
 }
 
+.section-title-h2{
+    font-size: 35px;
+    padding: 0% 10%;
+    text-align: center;
+}
+.section-title-h3{
+    
+}
 h2, h3{
     margin: 0%;
 }

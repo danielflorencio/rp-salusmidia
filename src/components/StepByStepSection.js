@@ -9,7 +9,7 @@ export default function StepByStepSection(){
     return(
         <>
             <Title 
-            title='THE STEP-BY-STEP OF YOUR INCOME EVOLUTION IS HERE.' 
+            title='The step-by-step of your income evolution is here.' 
             color='dark-blue' 
             background_color='white'/>
 
