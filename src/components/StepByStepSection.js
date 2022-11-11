@@ -1,7 +1,7 @@
 import './component-styles.css';
 import ImgTitleDescriptionMicroSection from './ImgTitleDescriptionMicroSection';
-import Title from './Title';
-import SubTitle from './Subtitle';
+import Title from './Title/Title';
+import SubTitle from './Subtitle/Subtitle';
 import img1 from '../imgs/img1.png'
 import img2 from '../imgs/img2.png'
 import img3 from '../imgs/img3.png'

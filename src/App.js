@@ -4,8 +4,8 @@ import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
 import IconsAndDescriptionSection from './components/IconsAndDescriptionSection';
 import StepByStepSection from './components/StepByStepSection';
-import CtaSection from './components/CtaSection';
-import FaqSection from './components/FaqSection';
+import CtaSection from './components/CtaSection/CtaSection';
+import FaqSection from './components/FaqSection/FaqSection';
 import Footer from './components/Footer';
 
 
@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <>
+      
       <HeroSection />
 
       {/* <Title/> 

@@ -1,6 +1,6 @@
 import './component-styles.css'
-import Title from './Title';
-import SubTitle from './Subtitle';
+import Title from './Title/Title';
+import SubTitle from './Subtitle/Subtitle';
 import {BsGoogle} from 'react-icons/bs';
 import {AiFillFacebook} from 'react-icons/ai';
 import {CgWebsite} from 'react-icons/cg';

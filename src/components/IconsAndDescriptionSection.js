@@ -1,7 +1,7 @@
 import './component-styles.css'
 import IconAndDescriptionBlock from "./IconAndDescriptionBlock";
-import SubTitle from './Subtitle';
-import Title from './Title';
+import SubTitle from './Subtitle/Subtitle';
+import Title from './Title/Title';
 import { AiFillStar } from 'react-icons/ai';
 import {FaTicketAlt} from 'react-icons/fa';
 import {AiOutlineCreditCard} from 'react-icons/ai';
@@ -14,11 +14,10 @@ import {BiMoney} from 'react-icons/bi';
 
 export default function IconsAndDescriptionSection(){
     return(
-        <>
+        <section className=''>
             <Title 
             title='A well done marketing can bring you all these benefits.' 
-            color='white' 
-            background_color='light-blue'/>
+            color='white'/>
 
             <SubTitle 
             subtitle='Schedule a meeting now and find out how we can help you get them.' 
@@ -66,6 +65,6 @@ export default function IconsAndDescriptionSection(){
                 icon={<AiFillStar/>}
                 description='Hiring our services is 6 times cheaper than assembling your own team. Close the contract before our prices increase.' />    
             </div>
-        </>
+        </section>
     )
 }
