@@ -1,16 +1,13 @@
 import React from 'react';
-import './App.css';
 import HeroSection from './components/HeroSection';
-import ServicesSection from './components/ServicesSection';
-import IconsAndDescriptionSection from './components/IconsAndDescriptionSection';
-import StepByStepSection from './components/StepByStepSection';
+import ServicesSection from './components/ServicesSection/ServicesSection';
+import IconsAndDescriptionSection from './components/IconsAndDescriptionSection/IconsAndDescriptionSection';
+import StepByStepSection from './components/StepByStepSection/StepByStepSection';
 import CtaSection from './components/CtaSection/CtaSection';
 import FaqSection from './components/FaqSection/FaqSection';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
-
-
-function App() {
+export default function App() {
   return (
     <>
       
@@ -33,25 +30,15 @@ function App() {
 
       <ServicesSection />
       
-      <IconsAndDescriptionSection/> {/* Individual icon & description blocks are inside the component's code. */}
+      <IconsAndDescriptionSection/>
 
       <StepByStepSection/>
 
-
-      {/* 
-      RedCTAButton has three color options as for background.
-      white, dark-blue and light-blue.
-      */}
-      {/* <Title title='testing it' color='white' background_color={'light-blue'}/> */}
       <CtaSection/>
       
-      {/* <Title/> */}
       <FaqSection/>
         
-
       <Footer/>
     </>
     );
 }
-
-export default App;

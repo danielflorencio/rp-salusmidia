@@ -1,13 +1,13 @@
-import './component-styles.css';
-import ImgTitleDescriptionMicroSection from './ImgTitleDescriptionMicroSection';
-import Title from './Title/Title';
-import SubTitle from './Subtitle/Subtitle';
-import img1 from '../imgs/img1.png'
-import img2 from '../imgs/img2.png'
-import img3 from '../imgs/img3.png'
+import '../Components-general-styles.css'
+import ImgTitleDescriptionMicroSection from '../ImgTitleDescriptionMicroSection';
+import Title from '../Title/Title';
+import SubTitle from '../Subtitle/Subtitle';
+import img1 from '../../imgs/img1.png'
+import img2 from '../../imgs/img2.png'
+import img3 from '../../imgs/img3.png'
 export default function StepByStepSection(){
     return(
-        <>
+        <section className='section color-dark-blue background-color-white'>
             <Title 
             title='The step-by-step of your income evolution is here.' 
             color='dark-blue' 
@@ -38,7 +38,6 @@ export default function StepByStepSection(){
             description="Here is where happiness lives, our favorite step. After collecting the data and improving the first campaigns, we will be able to know exactly what to do to further multiply your profit and the arrival of new patients." 
             style="left-text-right-img" 
             shadowyBorderBox={true}/>   
-        
-        </>
+        </section>
     )
 }

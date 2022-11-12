@@ -1,25 +1,17 @@
-import './component-styles.css'
-import Title from './Title/Title';
-import SubTitle from './Subtitle/Subtitle';
+import '../Components-general-styles.css'
+import Title from '../Title/Title';
+import SubTitle from '../Subtitle/Subtitle';
 import {BsGoogle} from 'react-icons/bs';
 import {AiFillFacebook} from 'react-icons/ai';
 import {CgWebsite} from 'react-icons/cg';
 import {AiOutlineLineChart} from 'react-icons/ai';
-import BigIconTitleDescriptionMicroSection from './BigIconTitleDescriptionMicroSection';
-
-
+import BigIconTitleDescriptionMicroSection from '../BigIconTitleDescriptionMicroSection';
 export default function ServicesSection(){
     return(
-        <>
-            <Title 
-            title='The 4 things that will multiply the number of incoming patients in your business...'
-            color='dark-blue' 
-            background_color='white'/>
+        <section className='section color-dark-blue background-color-white'>
+            <Title title='The 4 things that will multiply the number of incoming patients in your business...'/>
 
-            <SubTitle
-            subtitle='These are the basic pillars that will bring your revenue to the next level.' 
-            color='dark-blue' 
-            background_color='white' />
+            <SubTitle subtitle='These are the basic pillars that will bring your revenue to the next level.'/>
 
             <BigIconTitleDescriptionMicroSection 
             img={<BsGoogle/>} 
@@ -48,6 +40,6 @@ export default function ServicesSection(){
             description="Keep actively selling your best procedures to the world’s most used social networks. With Facebook and Instagram working for you, getting your treatments and procedures to reach more people will be easier than taking a nap in a rainy afternoon." 
             style="right-text-left-img" 
             shadowyBorderBox={false}/>   
-        </>
+        </section>
     )
 }

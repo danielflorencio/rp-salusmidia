@@ -1,7 +1,8 @@
-import './component-styles.css'
-import IconAndDescriptionBlock from "./IconAndDescriptionBlock";
-import SubTitle from './Subtitle/Subtitle';
-import Title from './Title/Title';
+import '../Components-general-styles.css'
+import './IconsAndDescriptionSection.css'
+import IconAndDescriptionBlock from "../IconAndDescriptionBlock/IconAndDescriptionBlock";
+import SubTitle from '../Subtitle/Subtitle';
+import Title from '../Title/Title';
 import { AiFillStar } from 'react-icons/ai';
 import {FaTicketAlt} from 'react-icons/fa';
 import {AiOutlineCreditCard} from 'react-icons/ai';
@@ -14,7 +15,7 @@ import {BiMoney} from 'react-icons/bi';
 
 export default function IconsAndDescriptionSection(){
     return(
-        <section className=''>
+        <section className='section color-dark-blue background-color-light-blue'>
             <Title 
             title='A well done marketing can bring you all these benefits.' 
             color='white'/>
@@ -24,7 +25,8 @@ export default function IconsAndDescriptionSection(){
             color='white' 
             background_color='light-blue'/>
 
-            <div className="section-type-blue" id='benefit-section'>
+            <div class='blocks-container'>
+
                 <IconAndDescriptionBlock 
                 title='Higher average ticket' 
                 icon={<FaTicketAlt/>}
@@ -64,7 +66,9 @@ export default function IconsAndDescriptionSection(){
                 title='6X cheaper' 
                 icon={<AiFillStar/>}
                 description='Hiring our services is 6 times cheaper than assembling your own team. Close the contract before our prices increase.' />    
+            
             </div>
+
         </section>
     )
 }

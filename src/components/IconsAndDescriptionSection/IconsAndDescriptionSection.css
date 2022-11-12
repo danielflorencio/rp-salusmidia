@@ -1,0 +1,8 @@
+.blocks-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}

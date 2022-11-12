@@ -1,13 +1,10 @@
 import { IconContext } from 'react-icons'
-import './component-styles.css'
-
-
-
+import './IconAndDescriptionBlock.css'
 export default function IconAndDescriptionBlock({icon, title, description}){
     return(
         <div class="block">
-            <div class="center">
-                <IconContext.Provider value={{className:'icon-sizer-40 center'}}>
+            <div class="align-content-center">
+                <IconContext.Provider value={{className:'icon-sizer-40'}}>
                     {icon}
                 </IconContext.Provider>
             </div>

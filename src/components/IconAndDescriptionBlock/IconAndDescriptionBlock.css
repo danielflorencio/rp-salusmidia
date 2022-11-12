@@ -1,0 +1,18 @@
+.block{
+    height: 280px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icon-sizer-40{
+    height: 40px;
+    width: 40px;
+}
+.icon-sizer-125{
+    height: 125px;
+    width: 125px;
+}
