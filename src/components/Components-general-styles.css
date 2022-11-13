@@ -14,12 +14,15 @@
     text-align: center;
 }
 
+.text-to-left{
+    align-self: flex-start;
+}
+
 .align-content-center{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .section{
     width: 100%;
     min-height: 10vh;

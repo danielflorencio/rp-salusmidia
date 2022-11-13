@@ -1,14 +1,11 @@
-import '../component-styles.css';
-// import FaqItem from '../FaqItem'
+import './FaqSectionStyles.css';
 import Title from '../Title/Title';
-import { useState } from 'react'
+import { useState } from 'react';
 
 function Answer({Answer, isVisible}){
     if(isVisible){
-        return <div className='answer'>{Answer}</div>
-    } else{
-        return null
-    }
+        return <div className='answer'><h4>{Answer}</h4></div>
+    } else return null
 }
 
 function FaqItem({question, answer}){
@@ -16,16 +13,15 @@ function FaqItem({question, answer}){
     function changeVisibility(){visibility ? (setVisibility(false)) : (setVisibility(true))}
     return(
         <div className="accordion-item">
-            <div className="question"><a class="accordion-link" onClick={changeVisibility}><strong>{question}</strong>{visibility ? (<ion-icon name="add-outline"></ion-icon>) : (<ion-icon name="remove-outline"></ion-icon>)}</a></div>
+            <div className="question"><a class="accordion-link" onClick={changeVisibility}><h3>{question}</h3>{visibility ? (<ion-icon name="add-outline"></ion-icon>) : (<ion-icon name="remove-outline"></ion-icon>)}</a></div>
             <Answer Answer={answer} isVisible={visibility}/>
         </div>
     )
 }
 
-
 export default function FaqSection(){
     return(
-        <section className='faq section'>
+        <section className='section'>
             <Title title='Frequently Asked Questions'/>
             <div className='faq-container'>
                 <FaqItem 

@@ -1,13 +1,11 @@
-import './component-styles.css'
 import { useState } from 'react'
 function Answer({Answer, isVisible}){
     if(isVisible){
         return(
             <div className='answer'>{Answer}</div>
         )
-    } else{
-        return null
-    }
+    } else return null
+
 }
 export default function FaqItem({question, answer}){
     const [visibility, setVisibility] = useState(true)

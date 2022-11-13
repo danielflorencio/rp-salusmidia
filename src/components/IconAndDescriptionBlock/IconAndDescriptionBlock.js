@@ -9,7 +9,7 @@ export default function IconAndDescriptionBlock({icon, title, description}){
                 </IconContext.Provider>
             </div>
             <h3>{title}</h3>
-            <p>{description}</p>
+            <p className='block-description'>{description}</p>
         </div>
     )
 }

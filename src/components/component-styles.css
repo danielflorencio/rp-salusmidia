@@ -1,4 +1,4 @@
-header{margin-top: 0%;}
+/* header{margin-top: 0%;}
 header > nav {margin-top: 0;}
 header > nav > a{
     float: right;
@@ -18,15 +18,6 @@ header > nav > a:hover{}
 .color-white{color: white;}
 .color-light-blue{color: #6384ff;}
 
-/* .section{
-    width: 100%;
-    max-height: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-} */
-
 .section-title-h2{
     font-size: 35px;
     padding: 0% 10%;
@@ -36,7 +27,7 @@ h2, h3{
     margin: 0%;
 }
 
-.section-1{ /* New section-1 */
+.section-1{ 
     display: flex;
     background-color: white;
     min-height: 400px;
@@ -158,7 +149,7 @@ h2, h3{
 .section-type-blue{
     display: flex;
     background-color: #6384ff;
-    min-height: 300px; /* Utilizing min and max height in sections with inner-containers help the section automatically shrink or expand as the containers start wrapping down. */
+    min-height: 300px; 
     max-height: 2400px;
     width: 100%;
     justify-content: space-evenly;
@@ -167,7 +158,7 @@ h2, h3{
     padding: 50px 0;
 }
 #benefit-section{
-    gap: 3rem; /* i gotta learn how to use this property in order to make the benefits section look better. The spacing among the blocks are just way too big. */
+    gap: 3rem; 
 }
 .block > p{
     text-align: center;
@@ -193,7 +184,6 @@ h2, h3{
 .shadowyBorderBox{
     width: 300px;
     height: 270px;
-    /* border: 1px solid black; */
     border-radius: 8px;
 }
 .question-block{
@@ -232,8 +222,8 @@ h2, h3{
 }
 .answer{
     padding-left: 5px;
-    overflow: hidden; /* Learn more about this property */
-    position: relative; /* Learn more about this property */
+    overflow: hidden; 
+    position: relative; 
     border: 1px solid;
     animation-name: answer;
     animation: answer 500ms ease-in-out;
@@ -255,4 +245,4 @@ h2, h3{
     
 @media (max-width: 480px){
 
-}
+} */

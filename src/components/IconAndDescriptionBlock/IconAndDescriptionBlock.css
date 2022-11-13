@@ -7,6 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .icon-sizer-40{
     height: 40px;
@@ -15,4 +16,7 @@
 .icon-sizer-125{
     height: 125px;
     width: 125px;
+}
+.block-description{
+    text-align: center;
 }
