@@ -1,4 +1,4 @@
-import '../Components-general-styles.css'
+import '../generalStyles.css'
 import Title from '../Title/Title';
 import SubTitle from '../Subtitle/Subtitle';
 import {BsGoogle} from 'react-icons/bs';

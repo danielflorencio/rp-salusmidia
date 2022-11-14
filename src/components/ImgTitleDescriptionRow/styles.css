@@ -1,0 +1,33 @@
+.inner-section{
+    display: flex;
+    max-height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inner-column{
+    height: 280px;
+    width: 500px; 
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.left{
+    margin-left: 40px;
+}
+.right{
+    margin-right: 40px;
+}
+.mockup{
+    width: 250px;
+    height: 250px;
+}
+
+/* .shadowyBorderBox{
+    width: 300px;
+    height: 270px;
+    border: 1px solid black; 
+    border-radius: 8px;
+} */

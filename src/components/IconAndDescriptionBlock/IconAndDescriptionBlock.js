@@ -1,5 +1,5 @@
 import { IconContext } from 'react-icons'
-import './IconAndDescriptionBlock.css'
+import './styles.css'
 export default function IconAndDescriptionBlock({icon, title, description}){
     return(
         <div class="block">

@@ -1,0 +1,43 @@
+.inner-section{
+    display: flex;
+    max-height: 350px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inner-column{
+    height: 280px;
+    width: 500px; 
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.left{
+    margin-left: 40px;
+}
+.right{
+    margin-right: 40px;
+}
+.mockup{
+    width: 250px;
+    height: 250px;
+}
+@media (max-width: 768px) {
+    .fix-mobile-flex-direction{
+        flex-direction: column-reverse !important; /* The 'flex-direction: column' in the rule below breaks the rule in this line. Putting '!important' here makes this rule not breakable. */
+    }
+    .inner-section{
+        flex-direction: column;
+    }
+    .left{
+        margin-left: 0px;
+    }
+    .right{
+        margin-right: 0px;
+    }
+    .description-column{
+        width: 350px !important; /* Overrides the width of the description columns*/
+    }
+}

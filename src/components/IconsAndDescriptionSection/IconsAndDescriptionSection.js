@@ -1,5 +1,5 @@
-import '../Components-general-styles.css'
-import './IconsAndDescriptionSection.css'
+import '../generalStyles.css'
+import './styles.css'
 import IconAndDescriptionBlock from "../IconAndDescriptionBlock/IconAndDescriptionBlock";
 import SubTitle from '../Subtitle/Subtitle';
 import Title from '../Title/Title';

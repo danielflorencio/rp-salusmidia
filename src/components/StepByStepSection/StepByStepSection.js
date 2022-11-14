@@ -1,4 +1,4 @@
-import '../Components-general-styles.css'
+import '../generalStyles.css'
 import ImgTitleDescriptionRow from '../ImgTitleDescriptionRow/ImgTitleDescriptionRow';
 import Title from '../Title/Title';
 import SubTitle from '../Subtitle/Subtitle';

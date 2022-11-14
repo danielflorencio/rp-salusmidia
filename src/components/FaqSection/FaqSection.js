@@ -1,4 +1,4 @@
-import './FaqSectionStyles.css';
+import './styles.css';
 import Title from '../Title/Title';
 import { useState } from 'react';
 
@@ -13,7 +13,7 @@ function FaqItem({question, answer}){
     function changeVisibility(){visibility ? (setVisibility(false)) : (setVisibility(true))}
     return(
         <div className="accordion-item">
-            <div className="question"><a class="accordion-link" onClick={changeVisibility}><h3>{question}</h3>{visibility ? (<ion-icon name="add-outline"></ion-icon>) : (<ion-icon name="remove-outline"></ion-icon>)}</a></div>
+            <div className="question"><a class="accordion-link" onClick={changeVisibility}><h3>{question}</h3>{visibility ? (<ion-icon name="remove-outline"></ion-icon>) : (<ion-icon name="add-outline"></ion-icon>)}</a></div>
             <Answer Answer={answer} isVisible={visibility}/>
         </div>
     )

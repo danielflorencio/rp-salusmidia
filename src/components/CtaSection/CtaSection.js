@@ -1,5 +1,5 @@
-import '../Components-general-styles.css';
-import './CtaSectionStyles.css'
+import '../generalStyles.css';
+import './styles.css'
 import Title from '../Title/Title';
 import Button from '../Button/Button';
 export default function CtaSection(){

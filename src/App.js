@@ -1,5 +1,6 @@
 import React from 'react';
-import HeroSection from './components/HeroSection';
+import Navbar from './components/Navbar/Navbar'
+import HeroSection from './components/HeroSection/HeroSection';
 import ServicesSection from './components/ServicesSection/ServicesSection';
 import IconsAndDescriptionSection from './components/IconsAndDescriptionSection/IconsAndDescriptionSection';
 import StepByStepSection from './components/StepByStepSection/StepByStepSection';
@@ -10,7 +11,7 @@ import Footer from './components/Footer/Footer';
 export default function App() {
   return (
     <>
-      
+      <Navbar/>
       <HeroSection />
 
       {/* <Title/> 
