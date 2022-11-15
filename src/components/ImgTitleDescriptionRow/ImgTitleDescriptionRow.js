@@ -2,7 +2,7 @@ import './styles.css'
 export default function ImgTitleDescriptionRow({img, subtitle, description, style, shadowyBorderBox}){
     if (style === 'left-text-right-img'){
         return(
-            <div class="inner-section">
+            <div class="inner-section step-by-step-row">
                 <div class="inner-column left">
                     <h2 className="text-to-left">{subtitle}</h2>
                     <p>{description}</p>
@@ -16,7 +16,7 @@ export default function ImgTitleDescriptionRow({img, subtitle, description, styl
         )
     } else if(style === 'right-text-left-img'){
         return(
-            <div class="inner-section">
+            <div class="inner-section fix-mobile-flex-direction step-by-step-row">
                 <div class="inner-column left mockup">
                     <div className={shadowyBorderBox ? 'shadowyBorderBox' : 'mockup-img'}>
                         <img className='mockup' src={img} alt="mockup"/>

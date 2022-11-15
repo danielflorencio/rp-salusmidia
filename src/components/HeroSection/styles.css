@@ -21,12 +21,14 @@
     }
     .main-column{
         width: 80%;
-        padding: 40px 0px;
+        padding: 40px 1rem;
     }
     .main-column h1{
-        font-size: 36px;
+        margin-top: 10vh;;
+        font-size: 32px;
     }
     .main-column h2{
+        margin-top: 10vh;
         font-size: 22px;
     }
     .main-img{

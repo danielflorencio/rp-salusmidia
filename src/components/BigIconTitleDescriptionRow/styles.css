@@ -32,12 +32,15 @@
         flex-direction: column;
     }
     .left{
-        margin-left: 0px;
+        margin-left: 0px !important;
     }
     .right{
-        margin-right: 0px;
+        margin-right: 0px !important;
     }
     .description-column{
         width: 350px !important; /* Overrides the width of the description columns*/
+    }
+    .inner-section{
+        margin-top: 80px;
     }
 }

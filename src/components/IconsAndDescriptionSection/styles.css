@@ -7,3 +7,8 @@
     flex-wrap: wrap;
     padding: 3rem 6rem;
 }
+@media (max-width: 768px) {
+    .blocks-container{
+        padding: 3rem 1rem;;
+    }
+}

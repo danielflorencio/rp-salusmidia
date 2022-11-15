@@ -24,6 +24,32 @@
     width: 250px;
     height: 250px;
 }
+@media (max-width: 768px){
+    .inner-column{
+        width: 88%;
+    }
+    .left{
+        margin-left: 0%;
+    }
+    .right{
+        margin-right: 0%;
+    }
+    .fix-mobile-flex-direction{
+        flex-direction: column-reverse !important; /* The 'flex-direction: column' in the rule below breaks the rule in this line. Putting '!important' here makes this rule not breakable. */
+    }
+    .step-by-step-row{
+        margin-top: 14vh;
+        margin-bottom: 26vh;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* .shadowyBorderBox{
     width: 300px;

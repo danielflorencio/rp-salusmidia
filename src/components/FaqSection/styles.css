@@ -46,3 +46,11 @@
       max-height: 500px;
     }
 }
+@media (max-width: 768px){
+    .accordion-item{
+        max-width: 84%;
+    }
+    .faq-container{
+        margin-top: 16vh;
+    }
+}
