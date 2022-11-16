@@ -2,9 +2,23 @@ import '../generalStyles.css';
 import './styles.css'
 import DoctorImg from '../../imgs/doctor.png'
 import Button from '../Button/Button';
+import gsap from 'gsap';
+import { useLayoutEffect, useRef } from 'react';
+
 export default function HeroSection(){
+    const heroSection = useRef();
+
+    // Documentation on how to do this: https://greensock.com/react/ 
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+            gsap.from('.main-column', {duration: 0.8, x:'-10%', opacity: 0});
+        }, heroSection);
+        return () => ctx.revert();
+    },[])
+
     return(
-        <section class="hero-section">
+        <section ref={heroSection} class="hero-section">
             <div class="main-column left">
                 <h1>The lack of patients in your healthcare clinic is a <strong>serious</strong> symptom.</h1>
                 <h2>Schedule a free meeting with us and discover how we can help you with that.</h2>
