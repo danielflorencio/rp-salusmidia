@@ -13,6 +13,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    opacity: 1;
 }
 .left{
     margin-left: 40px;
@@ -20,9 +21,22 @@
 .right{
     margin-right: 40px;
 }
+.animate-column{
+    /* animation-name: animateColumn; */
+
+    animation: 0.5s linear 0s slideIn;
+}
 .mockup{
     width: 250px;
     height: 250px;
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0px);
+    }
 }
 @media (max-width: 768px) {
     .fix-mobile-flex-direction{
