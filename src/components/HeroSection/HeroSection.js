@@ -9,7 +9,8 @@ export default function HeroSection(){
     const heroSection = useRef();
 
     // Documentation on how to do this: https://greensock.com/react/ 
-
+    // Documentation on how to animate while using the intersection oberver api https://dev.to/producthackers/intersection-observer-using-react-49ko
+    
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
             gsap.from('.main-column', {duration: 0.8, x:'-10%', opacity: 0});
