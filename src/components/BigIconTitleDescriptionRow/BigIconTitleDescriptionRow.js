@@ -68,7 +68,8 @@ export default function BigIconTitleDescriptionRow({img, subtitle, description, 
     
     const callBackFunction = (entries) => {
         const [entry] = entries
-        setIsVisible(entry.isInterSecting)
+        console.log('isIntersecting = ', entry.isIntersecting)
+        setIsVisible(entry.isIntersecting)
     }
 
     const options = {
@@ -77,26 +78,44 @@ export default function BigIconTitleDescriptionRow({img, subtitle, description, 
         threshold: 1.0
     }
 
-
     useEffect(() => {
-        
         const observer = new IntersectionObserver(callBackFunction, options)
-
         if (containerRef.current) observer.observe(containerRef.current)
-
         return () => {
             if (containerRef.current) observer.unobserve(containerRef.current)
         }
-
-    }, [containerRef], options)
+    }, [containerRef, options])
 
 
     if (style === 'left-text-right-img'){
         return(
-            <section class="inner-section fix-mobile-flex-direction">
-                
-                {/* <div ref={ContainerRef} className="inner-column left description-column"> */}
+
+            <section   className="inner-section fix-mobile-flex-direction">
                 <div ref={containerRef} class="inner-column left description-column">                
+                    {isVisible ? (
+                        <>
+                            <h2 className="text-to-left">{subtitle}</h2>
+                            <p>{description}</p>
+                        </>
+                    ) : null}
+                    {/* <h2 className="text-to-left">{subtitle}</h2>
+                    <p>{description}</p> */}
+                
+                </div>
+
+                <div class="inner-column right mockup img-column">
+                    <div className={shadowyBorderBox ? 'shadowyBorderBox' : 'mockup-img'}>
+                    <IconContext.Provider value={{ color: "#6ec1e4", className:'icon-sizer-125'}}>
+                        {img}
+                    </IconContext.Provider>
+                    </div>
+                </div>
+            
+
+
+
+                {/* <div ref={ContainerRef} className="inner-column left description-column"> */}
+                {/* <div ref={containerRef} class="inner-column left description-column">                
                     <h2 className="text-to-left">{subtitle}</h2>
                     <p>{description}</p>
                 </div>
@@ -106,8 +125,23 @@ export default function BigIconTitleDescriptionRow({img, subtitle, description, 
                         {img}
                     </IconContext.Provider>
                     </div>
-                </div>
+                </div> */}
             </section>
+            // <section class="inner-section fix-mobile-flex-direction">
+                
+            //     {/* <div ref={ContainerRef} className="inner-column left description-column"> */}
+            //     <div ref={containerRef} class="inner-column left description-column">                
+            //         <h2 className="text-to-left">{subtitle}</h2>
+            //         <p>{description}</p>
+            //     </div>
+            //     <div class="inner-column right mockup img-column">
+            //         <div className={shadowyBorderBox ? 'shadowyBorderBox' : 'mockup-img'}>
+            //         <IconContext.Provider value={{ color: "#6ec1e4", className:'icon-sizer-125'}}>
+            //             {img}
+            //         </IconContext.Provider>
+            //         </div>
+            //     </div>
+            // </section>
         )
     } else if(style === 'right-text-left-img'){
         return(
