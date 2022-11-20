@@ -4,3 +4,8 @@
     margin-bottom: 20px;
     text-align: center;
 }
+@media (max-width: 768px){
+    .section-title-h2{
+        font-size: 28px;
+    }
+}

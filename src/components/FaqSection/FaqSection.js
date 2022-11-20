@@ -4,8 +4,10 @@ import { useState } from 'react';
 
 function Answer({Answer, isVisible}){
     if(isVisible){
-        return <div className='answer'><h4>{Answer}</h4></div>
-    } else return null
+        return <div className='answer answer-open-animation'><h4>{Answer}</h4></div>
+    } else {
+        return <div className='answer answer-close-animation'><h4></h4></div>
+    }
 }
 
 function FaqItem({question, answer}){

@@ -1,13 +1,13 @@
 .block{
     height: 280px;
     width: 300px;
-    background-color: white;
+    background-color: #6384ff;
     border-radius: 10px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    align-items: center; */
+    /* padding: 20px; */
 }
 .icon-sizer-40{
     height: 40px;
@@ -19,4 +19,28 @@
 }
 .block-description{
     text-align: center;
+}
+.slideUp-animation{
+    animation: 0.3s ease-in 0s SlideUp;
+}
+.fill-block{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes SlideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }

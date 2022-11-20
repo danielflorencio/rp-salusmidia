@@ -1,8 +1,14 @@
 .button-to-center{
     text-align: center;
 }
+#cta-sec-title-padding{
+    padding: 0px 100px;
+}
 @media (max-width: 768px){
     .cta-section{
         margin-top: -10vh;
+    }
+    #cta-sec-title-padding{
+        padding: 0px;
     }
 }

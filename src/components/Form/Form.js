@@ -1,5 +1,5 @@
-// import './styles.css'
-// export default function Form(){
+import './styles.css'
+export default function Form(){
     
 //     const [initialAmount, setinitialAmount] = useState('')
 //     const [monthlyInvestment, setmonthlyInvestment] = useState('')
@@ -9,9 +9,6 @@
 
 //     function handleSubmit(e){
 //     e.preventDefault();
-//     console.log('before howlong ' + howLong)
-//     console.log('before monthly investments ' + monthlyInvestment)
-//     console.log('before initial amount ' + initialAmount)
 //     sethowLong(parseInt(howLong))
 //     setTotalAmount(parseFloat(initialAmount))
 //     setmonthlyInvestment(parseFloat(monthlyInvestment))
@@ -19,9 +16,6 @@
 //     }
 //     for(let i = 0; i <= howLong; i++) {
 //         setTotalAmount(totalAmount + monthlyInvestment)
-//         console.log('The loop worked ' + i + ' times')
-//         console.log('Total amount value = ' + totalAmount)
-//         console.log('--------------------------------- ')
 //         // totalAmount = totalAmount + monthlyInvestment;
 //       }
 //       setResult(
@@ -76,4 +70,4 @@
             
 //         </form>
 //     )
-// }
+}

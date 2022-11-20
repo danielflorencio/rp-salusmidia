@@ -34,17 +34,43 @@
     overflow: hidden; 
     position: relative; 
     border-bottom: 1px solid;
-    animation-name: answer;
-    animation: answer 600ms ease-in-out;
     padding: 10px 5px;
 }
-@keyframes answer {
+.answer-open-animation{
+    animation: answerOpen 600ms ease-in-out;
+}
+.answer-close-animation{
+    animation: answerClose 600ms ease-in-out;
+}
+@keyframes answerOpen {
     0% {
+      opacity: 1;
       max-height: 0px;
+      display: none;
+    }
+    50%{
+        opacity: 0.5;
     }
     100% {
+      opacity: 0;
       max-height: 500px;
+      display: contents;
     }
+}
+@keyframes answerClose {
+    0%{
+        max-height: 500px;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        max-height: 0px;
+        display: none;
+    }
+    
 }
 @media (max-width: 768px){
     .accordion-item{

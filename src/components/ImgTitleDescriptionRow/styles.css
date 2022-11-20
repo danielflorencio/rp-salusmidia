@@ -1,6 +1,6 @@
 .inner-section{
     display: flex;
-    max-height: 350px;
+    min-height: 280px;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
@@ -23,6 +23,32 @@
 .mockup{
     width: 250px;
     height: 250px;
+}
+.animate-left-column{
+    animation: 0.3s ease-in 0s slideInLeft;
+}
+.animate-right-column{
+    animation: 0.3s ease-in 0s slideInRight;
+}
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 @media (max-width: 768px){
     .inner-column{
