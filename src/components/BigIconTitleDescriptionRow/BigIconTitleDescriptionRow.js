@@ -17,25 +17,45 @@ export default function BigIconTitleDescriptionRow({img, subtitle, description, 
     const callBackFunction = (entries) => {
         const [entry] = entries
         setIsVisible(entry.isIntersecting)
+        // IntersectionObserver.unobserve();
+        // if(entry.isIntersecting) entry.target.unobserve
+        // if(entry.isIntersecting) observer.unobserve(entry.target)
     }
 
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 1.0
+        threshold: 0.4
     }
-
     useEffect(() => {
         const observer = new IntersectionObserver(callBackFunction, options)
-        if (containerRef.current) observer.observe(containerRef.current)
-        return () => {
-            if (containerRef.current) observer.unobserve(containerRef.current)
-        }
+        // if (containerRef.current) observer.observe(containerRef.current)
+        observer.observe(containerRef.current)
+        // observer.disconnect(containerRef.current)
+        
+        // console.log('containerRef = ', containerRef)
+        // console.log('containerRef.current = ', containerRef.current )
+        
+
+
+        // {isVisible ? observer.unobserve : null}
+        // if({isVisible}) {
+        //     observer.unobserve(containerRef.current)
+        // }
+        // if(containerRef.current.isIntersecting){
+        //     observer.unobserve
+        // }
+
+
+        // console.log('console Log = ', containerRef.isIntersecting)        
+        // if (containerRef.)
+        
+        // observer.unobserve(containerRef.current)
+        
     }, [containerRef, options])
 
     if (style === 'left-text-right-img'){
         return(
-
             <section ref={containerRef} className="inner-section fix-mobile-flex-direction">
                 <div className="inner-column left description-column">                
                     {isVisible ? (

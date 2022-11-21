@@ -10,13 +10,12 @@ export default function IconAndDescriptionBlock({icon, title, description}){
     const callBackFunction = (entries) => {
         const [entry] = entries
         setIsVisible(entry.isIntersecting)
-        // observer.unobserve
     }
 
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.4
+        threshold: 0.2
     }
 
     useEffect(() => {

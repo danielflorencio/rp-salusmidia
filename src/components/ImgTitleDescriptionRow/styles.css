@@ -67,6 +67,9 @@
         margin-top: 14vh;
         margin-bottom: 26vh;
     }
+    .inner-section{
+        min-height: 350px;
+    }
 }
 
 

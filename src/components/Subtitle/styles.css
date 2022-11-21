@@ -3,6 +3,23 @@
     padding: 0% 10%;
     text-align: center;
 }
+.title-box{
+    width: 100%;
+    min-height: 40px;
+}
+.slideUp-animation{
+    animation: 0.3s ease-in 0s SlideUp;
+}
+@keyframes SlideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 @media (max-width: 768px){
     .section-subtitle-h3{
         font-size: 24px;

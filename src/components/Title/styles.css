@@ -1,8 +1,25 @@
+.title-box{
+    width: 100%;
+    min-height: 50px;
+}
 .section-title-h2{
     font-size: 35px;
     padding: 0% 10%;
     margin-bottom: 20px;
     text-align: center;
+}
+.slideUp-animation{
+    animation: 0.3s ease-in 0s SlideUp;
+}
+@keyframes SlideUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 @media (max-width: 768px){
     .section-title-h2{

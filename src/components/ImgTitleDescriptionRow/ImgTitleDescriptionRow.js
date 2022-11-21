@@ -14,7 +14,7 @@ export default function ImgTitleDescriptionRow({img, subtitle, description, styl
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 1.0
+        threshold: 0.4
     }
 
     useEffect(() => {
@@ -46,7 +46,6 @@ export default function ImgTitleDescriptionRow({img, subtitle, description, styl
     } else if(style === 'right-text-left-img'){
         return(
             <div ref={containerRef} class="inner-section fix-mobile-flex-direction step-by-step-row">
-                
                     <div className="inner-column left mockup">
                         {isVisible ? (
                         <div className='animate-left-column'>
