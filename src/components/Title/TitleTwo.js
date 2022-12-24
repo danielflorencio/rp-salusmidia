@@ -3,21 +3,14 @@ import './styles.css'
 import '../generalStyles.css'
 export default function TitleTwo({title, color}){
 
-    const [isVisible, setIsVisible] = useState(false)
-
-        const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.4
-    }
-
-
-    // const callBackFunction = (entries) => {
-    //     const [entry] = entries
-    //     setIsVisible(entry.isIntersecting)
-    // }
-
+  const [isVisible, setIsVisible] = useState(false)
   const element = useRef(null);
+
+  const options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.4
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -26,7 +19,7 @@ export default function TitleTwo({title, color}){
         setIsVisible(entries[0].isIntersecting)
         // Perform some action here, such as loading an image or triggering an animation
       }
-    });
+    }, options);
 
     if (element.current) {
       observer.observe(element.current);
@@ -35,37 +28,13 @@ export default function TitleTwo({title, color}){
     return () => {
       observer.unobserve(element.current);
     };
-   }, [element]);
-
-
-
-
-
-
-
-
-
-    const containerRef = useRef(null)
-
-
-
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(callBackFunction, options)
-    //     if (containerRef.current) observer.observe(containerRef.current)
-        
-        
-    //     return () => {
-    //         if (containerRef.current) observer.unobserve(containerRef.current)
-    //     }
-        
-    // }, [containerRef, options])
-
-    return (
-        <div ref={element} className='title-box'>
-            {isVisible ? (
-                <h2 className={'color-' + color + ' section-title-h2 slideUp-animation'}>{title}</h2>
-            ) : null}
-        </div>
-    )
-    
+   }, [element, options]);
+  
+  return (
+    <div ref={element} className='title-box'>
+        {isVisible ? (
+            <h2 className={'color-' + color + ' section-title-h2 slideUp-animation'}>{title}</h2>
+        ) : null}
+    </div>
+  )   
 }

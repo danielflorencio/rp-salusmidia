@@ -2,32 +2,34 @@ import { useRef, useState, useEffect} from 'react'
 import './styles.css'
 export default function ImgTitleDescriptionRow({img, subtitle, description, style, shadowyBorderBox}){
     
-    
-    const containerRef = useRef(null)
     const [isVisible, setIsVisible] = useState(false)
-    
-    const callBackFunction = (entries) => {
-        const [entry] = entries
-        setIsVisible(entry.isIntersecting)
-    }
-
+    const element = useRef(null);
+  
     const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.4
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.4
     }
 
     useEffect(() => {
-        const observer = new IntersectionObserver(callBackFunction, options)
-        if (containerRef.current) observer.observe(containerRef.current)
-        return () => {
-            if (containerRef.current) observer.unobserve(containerRef.current)
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(entries[0].isIntersecting)
         }
-    }, [containerRef, options])
+      }, options);
+
+      if (element.current) {
+        observer.observe(element.current);
+      }
+
+      return () => {
+        observer.unobserve(element.current);
+      };
+     }, [element, options]);
     
     if (style === 'left-text-right-img'){
         return(
-            <div ref={containerRef} class="inner-section step-by-step-row">
+            <div ref={element} class="inner-section step-by-step-row">
                 {isVisible ? (
                 <>
                     <div className="inner-column left animate-left-column">
@@ -45,7 +47,7 @@ export default function ImgTitleDescriptionRow({img, subtitle, description, styl
         )
     } else if(style === 'right-text-left-img'){
         return(
-            <div ref={containerRef} class="inner-section fix-mobile-flex-direction step-by-step-row">
+            <div ref={element} class="inner-section fix-mobile-flex-direction step-by-step-row">
                     <div className="inner-column left mockup">
                         {isVisible ? (
                         <div className='animate-left-column'>

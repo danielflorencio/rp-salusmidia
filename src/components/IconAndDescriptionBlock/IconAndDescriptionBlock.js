@@ -3,32 +3,33 @@ import { useRef, useState, useEffect} from 'react'
 import './styles.css'
 export default function IconAndDescriptionBlock({icon, title, description}){
    
-   
-    const containerRef = useRef(null)
     const [isVisible, setIsVisible] = useState(false)
-    
-    const callBackFunction = (entries) => {
-        const [entry] = entries
-        setIsVisible(entry.isIntersecting)
-    }
-
+    const element = useRef(null);
+  
     const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.2
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.4
     }
 
     useEffect(() => {
-        const observer = new IntersectionObserver(callBackFunction, options)
-        if (containerRef.current) observer.observe(containerRef.current)
-        return () => {
-            if (containerRef.current) observer.unobserve(containerRef.current)
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(entries[0].isIntersecting)
         }
-    }, [containerRef, options])
-   
+      }, options);
+
+      if (element.current) {
+        observer.observe(element.current);
+      }
+
+      return () => {
+        observer.unobserve(element.current);
+      };
+     }, [element, options]);
    
     return(
-        <div ref={containerRef} class="block">
+        <div ref={element} class="block">
             {isVisible ? (
                 <div className='fill-block slideUp-animation'>      
                     <div class="align-content-center">
