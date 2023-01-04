@@ -11,52 +11,34 @@ export default function BigIconTitleDescriptionRow({img, subtitle, description, 
     // https://www.npmjs.com/package/react-intersection-observer
     
 
-    const containerRef = useRef(null)
     const [isVisible, setIsVisible] = useState(false)
-    
-    const callBackFunction = (entries) => {
-        const [entry] = entries
-        setIsVisible(entry.isIntersecting)
-        // IntersectionObserver.unobserve();
-        // if(entry.isIntersecting) entry.target.unobserve
-        // if(entry.isIntersecting) observer.unobserve(entry.target)
-    }
-
+    const element = useRef(null);
+  
     const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.4
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.4
     }
+  
     useEffect(() => {
-        const observer = new IntersectionObserver(callBackFunction, options)
-        // if (containerRef.current) observer.observe(containerRef.current)
-        observer.observe(containerRef.current)
-        // observer.disconnect(containerRef.current)
-        
-        // console.log('containerRef = ', containerRef)
-        // console.log('containerRef.current = ', containerRef.current )
-        
-
-
-        // {isVisible ? observer.unobserve : null}
-        // if({isVisible}) {
-        //     observer.unobserve(containerRef.current)
-        // }
-        // if(containerRef.current.isIntersecting){
-        //     observer.unobserve
-        // }
-
-
-        // console.log('console Log = ', containerRef.isIntersecting)        
-        // if (containerRef.)
-        
-        // observer.unobserve(containerRef.current)
-        
-    }, [containerRef, options])
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(entries[0].isIntersecting)
+        }
+      }, options);
+  
+      if (element.current) {
+        observer.observe(element.current);
+      }
+  
+      return () => {
+        observer.unobserve(element.current);
+      };
+    }, [element, options]);
 
     if (style === 'left-text-right-img'){
         return(
-            <section ref={containerRef} className="inner-section fix-mobile-flex-direction">
+            <section ref={element} className="inner-section fix-mobile-flex-direction">
                 <div className="inner-column left description-column">                
                     {isVisible ? (
                         <>
@@ -81,7 +63,7 @@ export default function BigIconTitleDescriptionRow({img, subtitle, description, 
     } else if(style === 'right-text-left-img'){
         return(
             <section className="inner-section">
-                <div ref={containerRef} class="inner-column left mockup img-column">
+                <div ref={element} class="inner-column left mockup img-column">
                     {isVisible ? (
                         <div className="animate-left-column">
                             <div className={shadowyBorderBox ? 'shadowyBorderBox' : 'mockup-img'}>

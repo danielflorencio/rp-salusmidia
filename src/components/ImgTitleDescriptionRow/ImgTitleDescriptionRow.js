@@ -10,22 +10,22 @@ export default function ImgTitleDescriptionRow({img, subtitle, description, styl
       rootMargin: '0px',
       threshold: 0.4
     }
-
+  
     useEffect(() => {
       const observer = new IntersectionObserver((entries) => {
         if (entries[0].isIntersecting) {
           setIsVisible(entries[0].isIntersecting)
         }
       }, options);
-
+  
       if (element.current) {
         observer.observe(element.current);
       }
-
+  
       return () => {
         observer.unobserve(element.current);
       };
-     }, [element, options]);
+    }, [element, options]);
     
     if (style === 'left-text-right-img'){
         return(
