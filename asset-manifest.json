@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/rp-salusmidia/static/css/main.5759ccb2.css",
+    "main.js": "/rp-salusmidia/static/js/main.5d187a03.js",
+    "static/media/img2.png": "/rp-salusmidia/static/media/img2.54a6f33cb63c58654aa1.png",
+    "static/media/img1.png": "/rp-salusmidia/static/media/img1.dbf739b7b16186017814.png",
+    "static/media/img3.png": "/rp-salusmidia/static/media/img3.7ec4b88cfa5a676ef156.png",
+    "static/media/doctor.png": "/rp-salusmidia/static/media/doctor.b4f0b849f187af19e876.png",
+    "index.html": "/rp-salusmidia/index.html",
+    "main.5759ccb2.css.map": "/rp-salusmidia/static/css/main.5759ccb2.css.map",
+    "main.5d187a03.js.map": "/rp-salusmidia/static/js/main.5d187a03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5759ccb2.css",
+    "static/js/main.5d187a03.js"
+  ]
+}
