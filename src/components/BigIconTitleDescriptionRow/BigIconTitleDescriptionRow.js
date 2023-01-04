@@ -57,7 +57,6 @@ export default function BigIconTitleDescriptionRow({img, subtitle, description, 
                         </div>
                     ) : null}
                 </div>
-        
             </section>
         )
     } else if(style === 'right-text-left-img'){

@@ -68,7 +68,6 @@ export default function IconsAndDescriptionSection(){
                 description='Hiring our services is 6 times cheaper than assembling your own team. Close the contract before our prices increase.' />    
             
             </div>
-
         </section>
     )
 }
