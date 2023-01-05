@@ -6,12 +6,10 @@ import {AiFillFacebook} from 'react-icons/ai';
 import {CgWebsite} from 'react-icons/cg';
 import {AiOutlineLineChart} from 'react-icons/ai';
 import BigIconTitleDescriptionRow from '../BigIconTitleDescriptionRow/BigIconTitleDescriptionRow';
-import TitleTwo from '../Title/TitleTwo';
 export default function ServicesSection(){
     return(
         <section className='section color-dark-blue background-color-white'>
-            <TitleTwo title='The 4 things that will multiply the number of incoming patients in your business...'/>
-            {/* <Title title='The 4 things that will multiply the number of incoming patients in your business...'/> */}
+            <Title title='The 4 things that will multiply the number of incoming patients in your business...'/>
 
             <SubTitle subtitle='These are the basic pillars that will bring your revenue to the next level.'/>
 

@@ -1,36 +1,13 @@
 import { IconContext } from 'react-icons'
-import { useRef, useState, useEffect} from 'react'
+import { useIntersection } from '../../customHooks/useIntersection';
 import './styles.css'
 export default function IconAndDescriptionBlock({icon, title, description}){
    
-  const [isVisible, setIsVisible] = useState(false)
-  const element = useRef(null);
-
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.4
-  }
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setIsVisible(entries[0].isIntersecting)
-      }
-    }, options);
-
-    if (element.current) {
-      observer.observe(element.current);
-    }
-
-    return () => {
-      observer.unobserve(element.current);
-    };
-  }, [element, options]);
+  const [isIntersecting, ref] = useIntersection();
    
   return(
-    <div ref={element} class="block">
-        {isVisible ? (
+    <div ref={ref} class="block">
+        {isIntersecting ? (
             <div className='fill-block slideUp-animation'>      
                 <div class="align-content-center">
                     <IconContext.Provider value={{className:'icon-sizer-40'}}>
