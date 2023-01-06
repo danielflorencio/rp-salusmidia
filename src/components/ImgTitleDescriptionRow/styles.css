@@ -14,10 +14,10 @@
     flex-direction: column;
     justify-content: center;
 }
-.left-text-right-img{
+.default{
 
 }
-.right-text-left-img{
+.reverse{
     flex-direction: row-reverse;
 }
 .left{

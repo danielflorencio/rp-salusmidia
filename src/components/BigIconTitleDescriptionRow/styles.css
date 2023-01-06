@@ -14,6 +14,12 @@
     flex-direction: column;
     justify-content: center;
 }
+.default{
+
+}
+.reverse{
+    flex-direction: row-reverse;
+}
 .left{
     margin-left: 40px;
 }
@@ -68,5 +74,6 @@
     }
     .inner-section{
         margin-top: 80px;
+        flex-direction: column;
     }
 }
