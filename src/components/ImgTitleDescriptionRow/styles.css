@@ -14,6 +14,12 @@
     flex-direction: column;
     justify-content: center;
 }
+.left-text-right-img{
+
+}
+.right-text-left-img{
+    flex-direction: row-reverse;
+}
 .left{
     margin-left: 40px;
 }
@@ -60,15 +66,13 @@
     .right{
         margin-right: 0%;
     }
-    .fix-mobile-flex-direction{
-        flex-direction: column-reverse !important; /* The 'flex-direction: column' in the rule below breaks the rule in this line. Putting '!important' here makes this rule not breakable. */
-    }
     .step-by-step-row{
         margin-top: 14vh;
         margin-bottom: 26vh;
     }
     .inner-section{
         min-height: 350px;
+        flex-direction: column;
     }
 }
 
