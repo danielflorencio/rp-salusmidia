@@ -13,3 +13,7 @@ a:link{
 a:visited{
     color: green;
 }
+.footer-text{
+    padding: 0 2rem;
+    text-align: center;
+}
